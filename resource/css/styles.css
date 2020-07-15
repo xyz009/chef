@@ -89,7 +89,8 @@ label{font-size: 12px;}
 /**************************************/
 /* MENUS */
 /**************************************/
-.menu-item{
+.menu-item,
+.menu-card{
 	height: 200px;
 	overflow: hidden;
 	border-top-left-radius: 5px;
@@ -107,7 +108,8 @@ label{font-size: 12px;}
 	border-top-right-radius: 5px;
 }
 
-.menu-item .text{
+.menu-item .text,
+.menu-card .text{
 	padding: 5px 12px;
 	background-color: #ffdc73;
 	position: absolute;
@@ -119,6 +121,16 @@ label{font-size: 12px;}
 
 .menu-item:hover img{
 	transform: scale(1.03);
+}
+
+.menu-card{
+	border: thin solid #ddd;
+}
+
+.menu-card a:link > h1,
+.menu-card a:visited > h1{
+	color: #444;
+	font-weight: bold;
 }
 
 .font-sm{
