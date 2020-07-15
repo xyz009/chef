@@ -1,0 +1,84 @@
+@font-face {
+    src: url("Nunito-Regular.ttf");
+    font-family: 'Nunito';
+}
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+}
+body{
+	min-height: 100vh;
+	position: relative;
+	font-family: 'Nunito', Arial;
+}
+main{
+	min-height: 100vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('../image/background.jpg') ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.logo{width: 180px;}
+
+.nav > a:link,
+.nav > a:visited{
+	letter-spacing: .13rem;
+	font-size: 15px;
+	padding: 8px 14px;
+	color: #FF5E14;
+	margin: 0 1px;
+}
+
+.nav > a:hover,
+.nav > a:active,
+.nav > a.active{
+	font-size: 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #FF5E14;
+}
+
+h1{
+	color: #FFF;
+}
+
+a.btn-ghost:link,
+a.btn-ghost:visited{
+	background-color: #FF5E14;
+	border-radius: 80px;
+	border: thin solid transparent;
+	padding: 8px 22px;
+	color: #FFF;
+}
+
+a.btn-ghost:hover{
+	background-color: transparent;
+	border: thin solid #FF5E14;
+}
+
+footer{
+	color: #FFF;
+	font-size: 10px;
+	text-align: center;
+	bottom: 0;
+	position: absolute;
+	padding: 8px;
+	width: 100%;
+}
