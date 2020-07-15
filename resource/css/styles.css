@@ -14,6 +14,7 @@ body{
 	min-height: 100vh;
 	position: relative;
 	font-family: 'Nunito', Arial;
+	overflow-x: hidden;
 }
 main{
 	min-height: 100vh;
@@ -24,10 +25,7 @@ main{
 }
 
 header{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -60,7 +58,8 @@ h1{
 }
 
 a.btn-ghost:link,
-a.btn-ghost:visited{
+a.btn-ghost:visited,
+.btn-ghost{
 	background-color: #FF5E14;
 	border-radius: 80px;
 	border: thin solid transparent;
@@ -68,13 +67,26 @@ a.btn-ghost:visited{
 	color: #FFF;
 }
 
-a.btn-ghost:hover{
+a.btn-ghost:hover,
+.btn-ghost:hover{
 	background-color: transparent;
 	border: thin solid #FF5E14;
 }
 
+.btn-ghost:hover{
+	color: #FF5E14;
+}
+
+.title{
+	text-align: center; 
+	padding-bottom: 5px; 
+	border-bottom: thin solid #FF5E14;
+}
+
+label{font-size: 12px;}
+
 footer{
-	color: #FFF;
+	color: #FF5E14;
 	font-size: 10px;
 	text-align: center;
 	bottom: 0;
