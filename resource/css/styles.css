@@ -85,6 +85,42 @@ a.btn-ghost:hover,
 
 label{font-size: 12px;}
 
+
+/**************************************/
+/* MENUS */
+/**************************************/
+.menu-item{
+	height: 200px;
+	overflow: hidden;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 12px;
+	position: relative;
+}
+
+.menu-item .menu-img{
+	transition: transform .3s;
+	object-fit: cover;
+	width: 100%;
+	position: relative;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.menu-item .text{
+	padding: 5px 12px;
+	background-color: #ffdc73;
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.menu-item:hover img{
+	transform: scale(1.03);
+}
+
 footer{
 	color: #FF5E14;
 	font-size: 10px;
